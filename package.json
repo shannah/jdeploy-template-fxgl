@@ -1,0 +1,33 @@
+{
+    "bin": {"test-fxgl": "jdeploy-bundle/jdeploy.js"},
+    "author": "Steve Hannah",
+    "description": "Parent for JavaFX starter project",
+    "main": "index.js",
+    "preferGlobal": true,
+    "repository": "",
+    "version": "1.0.2",
+    "jdeploy": {
+        "jdk": false,
+        "buildCommand": [
+            "./mvnw",
+            "package"
+        ],
+        "publishTargets": [{
+            "name": "npm: test-fxgl",
+            "type": "NPM",
+            "url": "test-fxgl"
+        }],
+        "javaVersion": "24",
+        "jar": "target/test-fxgl-1.0-SNAPSHOT.jar",
+        "javafx": true,
+        "title": "JDeploy Template FXGL"
+    },
+    "dependencies": {
+        "njre": "^0.2.0",
+        "shelljs": "^0.8.4"
+    },
+    "license": "ISC",
+    "name": "jdeploy-template-fxgl",
+    "files": ["jdeploy-bundle"],
+    "scripts": {"test": "echo \"Error: no test specified\" && exit 1"}
+}
