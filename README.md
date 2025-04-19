@@ -42,8 +42,8 @@ See [jDeploy Manual](https://www.jdeploy.com/docs/manual/)
 
 ### Credits
 
-This template was adapted from https://github.com/AlmasB/FXGL-MavenGradle[this project template].
+This template was adapted from [this project template](https://github.com/AlmasB/FXGL-MavenGradle).
 
-For actual game examples, please see https://github.com/AlmasB/FXGLGames[FXGLGames].
+For actual game examples, please see [FXGLGames](https://github.com/AlmasB/FXGLGames).
 
-You may wish to update the FXGL version to https://github.com/AlmasB/FXGL#maven[latest].
+You may wish to update the FXGL version to [latest](https://github.com/AlmasB/FXGL#maven).
