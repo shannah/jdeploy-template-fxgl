@@ -1,38 +1,49 @@
-= FXGL using Maven
+# jDeploy FXGL Game Starter Template
 
-This is an example of a basic Maven configuration for creating FXGL games on Java 17+ using Java and/or Kotlin.
+## About this Project
 
-NOTE: This template was adapted from https://github.com/AlmasB/FXGL-MavenGradle[this project template].
+This project was generated using the "FXGL Game Starter" project template from [jDeploy](https://www.jdeploy.com), a tool to deploy Java desktop apps on Windows, Mac, and Linux.
+
+To create your own application based on this template, open jDeploy, select "Create New Project", select the "FXGL Game Starter" template, and complete the wizard.
+
+![Image](https://github.com/user-attachments/assets/eb4854db-facb-41c7-8491-d6a15466007a)
+
+## Requirements
+
+* Java 24
+
+## Features
+
+* Maven
+* JavaFX
+* Modular
+
+## Run
+```
+./mvnw javafx:run
+```
+
+## Build
+
+```
+./mvnw package
+```
+
+### Deploy
+
+**Short Version:**
+Open project in [jDeploy](https://www.jdeploy.com), and press "Publish"
+
+[Long version](https://www.jdeploy.com/docs/manual/#_publishing_your_application)
+
+### Advanced Deployment
+
+See [jDeploy Manual](https://www.jdeploy.com/docs/manual/)
+
+### Credits
+
+This template was adapted from https://github.com/AlmasB/FXGL-MavenGradle[this project template].
 
 For actual game examples, please see https://github.com/AlmasB/FXGLGames[FXGLGames].
 
 You may wish to update the FXGL version to https://github.com/AlmasB/FXGL#maven[latest].
-
-== Run via Maven
-
-[source,bash]
-----
-mvn javafx:run
-----
-
-== Requirements
-
-This project uses FXGL 21, which requires Java 21.  
-
-If you want to change the version of Java, you can change it in the `package.json`, `pom.xml`, and `.github/workflows/jdeploy.yml` files.
-
-== Publishing Releases
-
-This project will generate releases (desktop installers) automatically on each git commit. See https://www.jdeploy.com/docs/intellij-plugin-tutorial[this tutorial for details].
-
-You can download releases on the  https://github.com/null/releases[repository releases page].
-
-=== DMG Releases
-
-By default Mac releases use an installer.  You can optionally enable DMG releases also by setting the variable `JDEPLOY_CREATE_DMG=true` in your repository settings.
-You will also need to define the following secrets:
-
-. `MAC_DEVELOPER_ID` : Your email address for your Apple developer account.
-. `MAC_DEVELOPER_CERTIFICATE_P12_BASE64` : A base64 encoding of your Mac developer certificate (p12)
-. `MAC_DEVELOPER_CERTIFICATE_PASSWORD` : The password you used for your Mac developer certificate p12, when you exported it from your keychain.
-. `MAC_NOTARIZATION_PASSWORD` : The application-specific password that you set for notarization in your Apple developer account.
